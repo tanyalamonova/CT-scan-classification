@@ -29,19 +29,3 @@ img = img.reshape(1, 50, 50, 3)
 print(img.shape)
 print(np.argmax(loaded_model.predict(img, verbose=1)))
 print(loaded_model.predict(img))
-
-
-
-# print("normal scans")
-# right_counter = 0
-# for index, img in enumerate(image_list):
-#     img = cv2.resize(img, (50,50))
-#     # print(img.shape)
-#     img = img.reshape(1, 50, 50, 3)
-#     result = np.argmax(loaded_model.predict(img))
-#     # if int(result) == 1:
-#     #     right_counter += 1
-#     #print(img.shape)
-#     print(result)
-#     print(loaded_model.predict(img))
-# #print(right_counter)
