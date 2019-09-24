@@ -38,18 +38,3 @@ for index, img in enumerate(image_list):
     for i in range(64):
         imageio.imwrite('test/abnormal/'+str(index)+'_'+str(i)+'new.png', images_aug[i])
 #endregion
-
-
-# img = imageio.imread("training_data_ct/normal/5.png") #read you image
-# images = np.array(
-#     [img for _ in range(5)], dtype=np.uint8)  # 32 means creat 32 enhanced images using following methods.
-
-# images_aug = iaa.Multiply((0.8, 1.2), per_channel=1).augment_images(images)
-# for i in range(5):
-#     imageio.imwrite('training_data_aug/test/_shear_' + str(i) + '_.png', images_aug[i])  #write all changed images
-
-
-# images_aug = seq.augment_images(images)
-
-# for i in range(4):
-#     imageio.imwrite('training_data_aug/normal/'+str(i)+'new.png', images_aug[i])  #write all changed images
